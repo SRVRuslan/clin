@@ -45,6 +45,12 @@ document.querySelectorAll('[data-direction]').forEach(button=>button.addEventLis
 <script>
 const phoneNumber='+14373386193';
 const emailAddress='beeesycalgary@gmail.com';
+const beeEasyPhotos=['assets/bee-easy-1.png','assets/bee-easy-2.png','assets/bee-easy-3.png','assets/bee-easy-4.png'];
+document.querySelectorAll('.slide img').forEach((image,index)=>{image.src=beeEasyPhotos[index%4]});
+document.querySelectorAll('.gallery-item img').forEach((image,index)=>{image.src=beeEasyPhotos[index%4]});
+document.querySelectorAll('.slide img')[0].alt='Bee Easy home service cleaning offerings';
+document.querySelectorAll('.slide img')[1].alt='Bee Easy home cleaning brand and logo';
+document.querySelectorAll('.slide img')[2].alt='Bee Easy before and after cleaning result';
 document.querySelector('.brand span:nth-child(2)').innerHTML='BEE EASY<small>Home service company</small>';
 document.querySelector('.topbar span:first-child').textContent='Bee Easy home service company';
 document.querySelector('.phone-icon').href='tel:'+phoneNumber;
