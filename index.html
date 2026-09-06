@@ -24,7 +24,7 @@ body{background-color:var(--cream);background-image:linear-gradient(135deg,rgba(
 <style>@media(max-width:800px){.pricing,.gallery,.reviews,.faq{padding:72px 0}.price-grid,.review-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item:first-child{grid-row:auto}.gallery-item:first-child img,.gallery-item img{height:180px}.gallery-item:first-child{grid-column:span 2}.review{font-size:18px}.faq .section-intro{margin-bottom:28px}}</style>
 <style>.slider{background:transparent}.slide{bottom:48px;transition:none}.slide img{object-fit:contain;background:transparent}.slide-label{bottom:-34px}</style>
 <style>.instagram-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.instagram-grid .gallery-item{align-self:start}.instagram-grid .gallery-item img,.instagram-grid .gallery-item:first-child img{width:100%;height:auto;object-fit:contain}.instagram-grid .gallery-item figcaption{padding:10px 12px}.instagram-grid .gallery-item:first-child{grid-row:auto}@media(max-width:800px){.instagram-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}</style>
-<style>body{background-image:linear-gradient(135deg,rgba(255,250,240,.82),rgba(255,250,240,0) 38%),linear-gradient(315deg,rgba(239,226,193,.55),rgba(239,226,193,0) 32%),linear-gradient(135deg,transparent 49.5%,rgba(136,86,45,.1) 50%,transparent 50.5%),linear-gradient(45deg,transparent 49.5%,rgba(232,176,78,.1) 50%,transparent 50.5%)}.slider{box-shadow:none}.trust{border-color:var(--line)}.trust-item{border-color:var(--line)}.whatsapp-icon{border-color:var(--line);background:var(--mint)}.whatsapp-icon:hover{background:var(--coral)}.review cite{color:var(--mint)}.slider-controls button{background:var(--mahogany)}</style>
+<style>body{background-image:linear-gradient(135deg,rgba(255,250,240,.82),rgba(255,250,240,0) 38%),linear-gradient(315deg,rgba(239,226,193,.55),rgba(239,226,193,0) 32%),linear-gradient(135deg,transparent 49.5%,rgba(136,86,45,.1) 50%,transparent 50.5%),linear-gradient(45deg,transparent 49.5%,rgba(232,176,78,.1) 50%,transparent 50.5%)}.slider{box-shadow:none}.trust{border-color:var(--line)}.trust-item{border-color:var(--line)}.whatsapp-icon{border-color:var(--line);background:var(--mint)}.whatsapp-icon:hover{background:var(--coral)}.review cite{color:var(--mint)}.slider-controls button{background:var(--mahogany)}.contact-grid>.contact-form{margin-top:0}</style>
 <style>.brand-mark{width:58px;height:48px;background:url("assets/bee-easy-logo.png") center/contain no-repeat;color:transparent;border-radius:0;font-size:0;transform:none}.brand-mark::first-letter{font-size:0}</style>
 </head>
 <body>
@@ -85,6 +85,9 @@ document.querySelectorAll('.service h3')[2].textContent='Post-renovation cleanin
 document.querySelectorAll('.service p')[0].textContent='Reliable home cleaning that gives you more time for the things that matter.';
 document.querySelectorAll('.service p')[1].textContent='A detailed clean for kitchens, bathrooms, bedrooms, and the spaces in between.';
 document.querySelectorAll('.service p')[2].textContent='A fresh, careful reset after renovations, moves, or before a new beginning.';
+const contactGrid=document.querySelector('.contact-grid');
+const contactForm=document.querySelector('.contact-form');
+contactGrid.append(contactForm);
 const instagram=document.createElement('a');
 instagram.href='https://www.instagram.com/beeeasycalgary/';instagram.target='_blank';instagram.rel='noreferrer';instagram.innerHTML='<span class="contact-icon">&#9679;</span><span><strong>Instagram</strong>@beeeasycalgary</span>';
 document.querySelector('.contact-list').append(instagram);
